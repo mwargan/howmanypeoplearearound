@@ -9,11 +9,12 @@ A cellphone is determined to be in proximity to the computer based on sniffing W
 requests. Possible uses of *howmanypeoplearearound* include: monitoring foot traffic in your house
 with Raspberry Pis, seeing if your roommates are home, etc.
 
-## This fork does not collect MAC addresses so some issues may arise in analysis and index.html files
 
 Tested on Linux (Raspbian and Ubuntu) and Mac OS X.
 
-### **It may be illegal** to monitor networks for MAC addresses, especially on networks that *you do not own*. Please check your country's laws (for US [Section 18 U.S. Code § 2511](https://www.law.cornell.edu/uscode/text/18/2511)) - [discussion](https://github.com/schollz/howmanypeoplearearound/issues/4).
+## This fork does not collect MAC addresses so some issues may arise in analysis and index.html files
+
+**It may be illegal** to monitor networks for MAC addresses (which is why this fork aims to not do this), especially on networks that *you do not own*. Please check your country's laws (for US [Section 18 U.S. Code § 2511](https://www.law.cornell.edu/uscode/text/18/2511)) - [discussion](https://github.com/schollz/howmanypeoplearearound/issues/4).
 
 Getting started
 ===============
