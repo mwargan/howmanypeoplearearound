@@ -211,7 +211,7 @@ def scan(adapter, scantime, verbose, dictionary, number, nearby, jsonprint, out,
         sys.stdout.write(RED)
         for mac in foundMacs:
             if mac in targetmacset:
-                print("Found MAC address: %s" % mac)
+                #print("Found MAC address: %s" % mac)
                 print("rssi: %s" % str(foundMacs[mac]))
         sys.stdout.write(RESET)
 
@@ -246,7 +246,10 @@ def scan(adapter, scantime, verbose, dictionary, number, nearby, jsonprint, out,
         if allmacaddresses or oui_id in cellphone:
             if not nearby or (nearby and foundMacs[mac] > -70):
                 cellphone_people.append(
-                    {'company': oui_id, 'rssi': foundMacs[mac], 'mac': mac})
+                    {'company': oui_id, 'rssi': foundMacs[mac]
+                     #, 'mac': mac
+                    }
+                )
     if sort:
         cellphone_people.sort(key=lambda x: x['rssi'], reverse=True)
     if verbose:
